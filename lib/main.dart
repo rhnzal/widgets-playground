@@ -2,6 +2,7 @@
 import 'package:flutter_playground/bottombar_docked.dart';
 import 'package:flutter_playground/column_debug.dart';
 import 'package:flutter_playground/timelinebuildertest.dart';
+import 'package:flutter_playground/horizontal_timeline.dart';
 import 'package:flutter_playground/widget_test_screen.dart';
 import 'package:timelines/timelines.dart';
 
@@ -136,7 +137,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
 void main () {
-  runApp(const BottomBarDocked());
+  runApp(const APP());
 }
 
 class APP extends StatelessWidget {
@@ -152,7 +153,7 @@ class APP extends StatelessWidget {
           }
         )
       ),
-      home: MyApp(),
+      home: HorizontalTimeline(),
     );
   }
 }
